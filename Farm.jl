@@ -6,12 +6,12 @@ function go(size,rnot)
     for i = 1:size
         n=1
         for j = 1:size
-            Farm[n3,1] = n2
-            Farm[n3,2] = n
+            Farm[n3,1] = n
+            Farm[n3,2] = n2
             n=n+space
             n3=n3+1
         end
-        n2=n2+space
+        n2=n2-space
     end
     
     Farm = Farm[1:end .!= size^2-size+2,:]
